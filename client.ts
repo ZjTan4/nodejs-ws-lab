@@ -4,8 +4,11 @@
 import * as Phaser from "phaser";
 
 interface ICoords {
-  x: number;
-  y: number;
+  [key: string]: {
+    x: number;
+    y: number;
+    frame: number;
+  };
 }
 
 const DEBUG = false; // Render debug physics entities
